@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block content %}
+    <div class="logo">Sign In</div>
+    <div class="subtitle">Enter your credentials to continue</div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        {% for field in form %}
+            <div class="form-group">
+                {{ field }}
+                {% if field.errors %}
+                    <div class="error-message">
+                        {% for error in field.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        
+        <button type="submit" class="btn-primary">Sign In</button>
+    </form>
+
+    <a href="{% url 'register' %}" class="link">Don't have an account? Create one</a>
+{% endblock %}

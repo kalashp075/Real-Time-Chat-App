@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Account{% endblock %}
+
+{% block content %}
+    <div class="logo">Create Account</div>
+    <div class="subtitle">Join the chat community</div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        {% for field in form %}
+            <div class="form-group">
+                {{ field }}
+                {% if field.errors %}
+                    <div class="error-message">
+                        {% for error in field.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        
+        <button type="submit" class="btn-primary">Create Account</button>
+    </form>
+
+    <a href="{% url 'login' %}" class="link">Already have an account? Sign in</a>
+{% endblock %}
