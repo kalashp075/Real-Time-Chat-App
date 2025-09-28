@@ -2,25 +2,25 @@
 
 A real-time chat application built with Django Channels and WebSockets. Features include instant messaging, online user status, and a beautiful responsive interface.
 
-## ✨ Features
+## Features
 
-### 🔥 Core Functionality
+### Core Functionality
 - **Real-time messaging** - Instant message delivery via WebSockets
 - **User authentication** - Secure login/registration system
 - **Private chat rooms** - One-on-one conversations
 - **Message persistence** - Chat history saved to database
 - **Online status** - See who's currently active
 
-### 🎨 Modern Interface
+### Modern Interface
 - **Instagram-inspired design** - Clean, minimal UI
 - **Split-screen layout** - User list + chat interface
 - **Responsive design** - Works on desktop and mobile
 
-### 🛡️ Security Features
+### Security Features
 - **User authentication** - Login required for chat access
 - **Session management** - Proper logout functionality
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend**: Django 4.2+, Django Channels
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
 - **WebSockets**: Django Channels with ASGI
@@ -79,7 +79,7 @@ daphne -p 8000 chat.asgi:application
 http://localhost:8000
 ```
 
-## 📱 How to Use
+## How to Use
 
 ### Getting Started
 1. **Register** a new account or **login** with existing credentials
@@ -88,7 +88,7 @@ http://localhost:8000
 4. **Type your message** and press Enter or click Send
 5. **Real-time updates** - messages appear instantly!
 
-## 🔧 Key Components Explained
+## Key Components Explained
 
 ### WebSocket Consumer (`consumers.py`)
 Handles real-time communication:
