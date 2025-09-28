@@ -29,7 +29,8 @@ A real-time chat application built with Django Channels and WebSockets. Features
 
 
 
-<img width="1680" height="1050" alt="Screenshot 2025-09-28 at 6 25 05 PM" src="https://github.com/user-attachments/assets/fbf580be-0a72-4e38-9ed8-da65ddf3edcb" />
+
+<img width="1220" height="848" alt="Screenshot 2025-09-28 at 6 25 41 PM" src="https://github.com/user-attachments/assets/7e73f683-a2de-4309-9db7-64efbc449362" />
 
 
 
